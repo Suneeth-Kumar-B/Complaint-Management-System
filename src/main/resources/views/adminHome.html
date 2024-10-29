@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Home</title>
+</head>
+<body>
+    <h1 th:text="${message}"></h1>
+    
+    <!-- Button 1: List of All Moderators -->
+    <form action="/listModerators" method="get">
+        <button type="submit">List of All Moderators</button>
+    </form>
+
+    <!-- Button 2: List of All Complaints -->
+    <form action="/listComplaints" method="get">
+        <button type="submit">List of All Complaints</button>
+    </form>
+    
+</body>
+</html>
